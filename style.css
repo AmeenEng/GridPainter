@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.wrapper {
+    background-color: #fff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.opt-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+button {
+    background-color: #00796b;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 6px;
+    border: 3px solid #333;
+}
+
+.slider {
+    flex: 1;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+.gridcol {
+    height: 1em;
+    width: 1em;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+.gridRow {
+    display: flex;
+}
+
+@media only screen and (max-width: 760px) {
+    .gridcol {
+        height: 0.8em;
+        width: 0.8em;
+    }
+}
